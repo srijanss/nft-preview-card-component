@@ -37,4 +37,6 @@ img {
   object-fit: cover;
 }
 
-@mixin visually-hidden;
+.visually-hidden {
+  @mixin visually-hidden;
+}
