@@ -1,17 +1,17 @@
 module.exports = {
+  syntax: "postcss-scss",
   plugins: [
     require("stylelint")({
       configFile: "./.stylelintrc.json",
     }),
-    require("autoprefixer")({
-      overrideBrowserslist: ["last 2 versions", "ie > 8"],
-    }),
+    require("postcss-import"),
+    require("postcss-mixins"),
     require("postcss-preset-env")({
       stage: 1,
     }),
-    require("postcss-import"),
-    require("postcss-nested"),
-    require("postcss-mixins"),
+    require("autoprefixer")({
+      overrideBrowserslist: ["last 2 versions", "ie > 8"],
+    }),
     require("cssnano")({
       preset: "default",
     }),

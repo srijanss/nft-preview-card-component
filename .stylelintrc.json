@@ -7,6 +7,13 @@
     "at-rule-no-unknown": null,
     "custom-property-empty-line-before": null,
     "property-no-vendor-prefix": null,
-    "media-feature-range-notation": "prefix"
+    "media-feature-range-notation": "prefix",
+    "selector-class-pattern": [
+      "^[a-z0-9\\-]+(__[a-z0-9\\-]+)?(--[a-z0-9\\-]+)?$",
+      {
+        "resolveNestedSelectors": true,
+        "message": "Selector should use BEM naming conventions (selector-class-pattern)"
+      }
+    ]
   }
 }
