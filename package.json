@@ -1,0 +1,32 @@
+{
+  "name": "NFT preview card component",
+  "version": "1.0.0",
+  "description": "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.1",
+    "postcss": "^8.4.38",
+    "postcss-import": "^16.1.0",
+    "postcss-mixins": "^10.0.1",
+    "postcss-nested": "^6.0.1",
+    "postcss-preset-env": "^9.5.11",
+    "stylelint": "^16.9.0",
+    "stylelint-config-standard": "^36.0.1",
+    "vite": "^5.2.0"
+  },
+  "keywords": [
+    "NFT",
+    "preview",
+    "card",
+    "component"
+  ],
+  "author": "Srijan Manandhar",
+  "license": "ISC"
+}

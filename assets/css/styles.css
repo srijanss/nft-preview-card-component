@@ -1,0 +1,40 @@
+@import "./_css-reset.css";
+@import "./_mixins.css";
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-soft-blue: hsl(215, 51%, 70%);
+  --color-cyan: hsl(178, 100%, 50%);
+  --color-very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --color-very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --color-very-dark-blue-line: hsl(215, 32%, 27%);
+  --default-font-family: "Outfit", sans-serif;
+  --default-font-size: 16px;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: var(--default-font-family);
+  font-variation-settings: "wght" var(--fw-regular);
+  font-size: var(--default-font-size);
+  color: var(--color-white);
+  background-color: var(--color-very-dark-blue-main-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-inline-size: 100%;
+  object-fit: cover;
+}
+
+@mixin visually-hidden;
