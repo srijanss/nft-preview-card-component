@@ -39,6 +39,13 @@ img {
 
 main {
   padding: 62px 1.5rem 0;
+
+  @mixin media-query-tablet {
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .l-flex {
@@ -66,11 +73,12 @@ main {
 }
 
 .card {
-  --card-width: 100%;
+  --card-width: 327px;
   --card-height: auto;
 
   width: var(--card-width);
   height: var(--card-height);
+  margin: 0 auto;
   background-color: var(--color-very-dark-blue-card-bg);
   border-radius: 15px;
   padding: 1.5rem;
@@ -152,5 +160,27 @@ main {
     height: var(--size);
     border-radius: 50%;
     border: 1px solid var(--color-soft-blue);
+  }
+
+  @mixin media-query-small-mobile {
+    --card-width: 100%;
+  }
+
+  @mixin media-query-tablet {
+    --card-width: 350px;
+
+    padding: 1.5rem 1.5rem 2rem;
+
+    &__body {
+      margin-top: 1rem;
+    }
+
+    &__data-time {
+      margin-top: 1.5rem;
+    }
+
+    &__divider {
+      margin: 1.5rem 0 1rem;
+    }
   }
 }

@@ -10,6 +10,12 @@
   }
 }
 
+@define-mixin media-query-small-mobile {
+  @media (max-width: 374px) {
+    @mixin-content;
+  }
+}
+
 @define-mixin visually-hidden {
   position: absolute;
   width: 1px;
