@@ -1,11 +1,11 @@
 module.exports = {
-  syntax: "postcss-scss",
   plugins: [
     require("stylelint")({
       configFile: "./.stylelintrc.json",
     }),
     require("postcss-import"),
     require("postcss-mixins"),
+    require("postcss-nested"),
     require("postcss-preset-env")({
       stage: 1,
     }),
