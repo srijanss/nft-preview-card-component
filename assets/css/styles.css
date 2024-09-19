@@ -37,18 +37,155 @@ img {
   object-fit: cover;
 }
 
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-cyan);
+  }
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  border: 0.5px solid var(--color-very-dark-blue-line);
+}
+
 main {
-  padding: 62px 1.5rem 0;
+  width: 100%;
+  min-height: 100vh;
+  border: 1px solid red;
+
+  /* padding: 62px 1.5rem 0;
 
   @mixin media-query-tablet {
     padding: 0;
     height: 100vh;
     display: flex;
     align-items: center;
+  } */
+}
+
+.visually-hidden {
+  @mixin visually-hidden;
+}
+
+/* composition */
+.grid-flow-md {
+  @mixin media-query-tablet {
+    display: grid;
+    place-items: center;
   }
 }
 
-.l-flex {
+.flex-col {
+  --gap: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap, 0);
+}
+
+.flex-row {
+  --gap: 0;
+
+  display: flex;
+  gap: var(--gap, 0);
+  align-items: center;
+}
+
+/* utilities */
+.text-heading {
+  @mixin heading-styles;
+}
+
+.text-body {
+  @mixin body-styles;
+}
+
+.text-caption {
+  @mixin caption-styles;
+}
+
+.text-caption-bold {
+  @mixin caption-bold-styles;
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+.color-soft-blue {
+  color: var(--color-soft-blue);
+}
+
+.color-cyan {
+  color: var(--color-cyan);
+}
+
+.card-bg {
+  background-color: var(--color-very-dark-blue-card-bg);
+}
+
+.br-8 {
+  border-radius: 0.5rem;
+}
+
+.br-15 {
+  border-radius: 0.9375rem;
+}
+
+.p-24 {
+  padding: 1.5rem;
+}
+
+.mt-12 {
+  margin-top: 0.75rem;
+}
+
+.mt-16 {
+  margin-top: 1rem;
+}
+
+.mt-24 {
+  margin-top: 1.5rem;
+}
+
+.my-16 {
+  margin: 1rem 0;
+}
+
+.push-right {
+  margin-left: auto;
+}
+
+.gap-custom-data {
+  gap: 6.8px;
+}
+
+.gap-custom-time {
+  gap: 7.7px;
+}
+
+/* blocks */
+.card {
+  --card-width: 327px;
+  --card-height: auto;
+
+  width: var(--card-width);
+  height: var(--card-height);
+  margin: 0 auto;
+
+  @mixin media-query-small-mobile {
+    --card-width: 100%;
+  }
+
+  @mixin media-query-tablet {
+    --card-width: 350px;
+  }
+}
+
+/* .l-flex {
   display: flex;
 
   &--column {
@@ -70,9 +207,9 @@ main {
 
 .is-hidden {
   @mixin visually-hidden;
-}
+} */
 
-.card {
+/* .card {
   --card-width: 327px;
   --card-height: auto;
 
@@ -215,4 +352,4 @@ main {
       margin: 1.5rem 0 1rem;
     }
   }
-}
+} */

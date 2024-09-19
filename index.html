@@ -20,28 +20,28 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <main>
-      <article class="card">
-        <figure class="card__figure card__figure--main">
+    <main class="[ grid-flow-md ]">
+      <article class="[ card ] [ flex-col ] [ card-bg br-15 p-24 ]">
+        <figure class="[ card__figure ] [ br-8 ]">
           <img
-            class="card__image"
+            class="[ card__image ] [ br-8 ]"
             src="./assets/images/image-equilibrium.jpg"
             alt="Equilibrium #3429"
           />
-          <figcaption class="card__caption is-hidden">
+          <figcaption class="[ card__caption ] [ visually-hidden ]">
             Main image of Equilibrium #3429 card
           </figcaption>
         </figure>
-        <h1 class="card__heading">
-          <a class="card__link" href="#">Equilibrium #3429</a>
+        <h1 class="[ card__heading ] [ text-heading mt-24 ]">
+          <a class="[ card__link ] [ color-white ]" href="#"
+            >Equilibrium #3429</a
+          >
         </h1>
-        <p class="card__body">
+        <p class="[ card__body ] [ text-body color-soft-blue mt-12 ]">
           Our Equilibrium collection promotes balance and calm.
         </p>
-        <div
-          class="l-flex l-flex--justify-between l-flex--align-center card__data-time"
-        >
-          <div class="card__data">
+        <div class="[ card__data-time ] [ flex-row ] [ mt-16 ]">
+          <div class="[ card__data ] [ flex-row ] [ gap-custom-data ]">
             <svg
               width="11"
               height="18"
@@ -57,12 +57,14 @@
             </svg>
             <data
               value="0.041"
-              class="card__caption card__caption--bold card__caption--cyan"
+              class="[ card__caption ] [ text-caption-bold color-cyan ]"
             >
               0.041 ETH
             </data>
           </div>
-          <div class="card__time">
+          <div
+            class="[ card__time ] [ flex-row ] [ push-right gap-custom-time ]"
+          >
             <svg
               width="17"
               height="17"
@@ -76,19 +78,23 @@
                 fill="#8BACD9"
               />
             </svg>
-            <span class="card__caption">3 days left</span>
+            <span class="[ card__caption ] [ text-caption color-soft-blue ]"
+              >3 days left</span
+            >
           </div>
         </div>
-        <hr class="card__divider" />
-        <figure class="l-flex l-flex--align-center l-flex--gap-1 card__figure">
+        <hr class="[ card__divider ] [ my-16 ]" />
+        <figure class="[ card__figure ] [ flex-row ]">
           <img
             class="card__author-image"
             src="./assets/images/image-avatar.png"
             alt="Jules Wyvern"
           />
-          <figcaption class="card__caption card__caption--author">
+          <figcaption
+            class="[ card__caption ] [ text-caption color-soft-blue ]"
+          >
             Creation of
-            <a href="#" class="card__link">Jules Wyvern</a>
+            <a href="#" class="[ card__link ] [ color-white ]">Jules Wyvern</a>
           </figcaption>
         </figure>
       </article>
