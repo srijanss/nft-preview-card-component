@@ -20,15 +20,15 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <main class="[ grid-flow-md ]">
+    <main class="[ grid-flow-md ] [ pt-62 ]">
       <article class="[ card ] [ flex-col ] [ card-bg br-15 p-24 ]">
-        <figure class="[ card__figure ] [ br-8 ]">
+        <figure class="[ card__figure ] [ br-8 ]" data-type="main">
           <img
             class="[ card__image ] [ br-8 ]"
             src="./assets/images/image-equilibrium.jpg"
             alt="Equilibrium #3429"
           />
-          <figcaption class="[ card__caption ] [ visually-hidden ]">
+          <figcaption class="[ visually-hidden ]">
             Main image of Equilibrium #3429 card
           </figcaption>
         </figure>
@@ -57,7 +57,8 @@
             </svg>
             <data
               value="0.041"
-              class="[ card__caption ] [ text-caption-bold color-cyan ]"
+              class="[ card__caption ] [ text-caption color-cyan ]"
+              data-type="bold"
             >
               0.041 ETH
             </data>
@@ -83,15 +84,15 @@
             >
           </div>
         </div>
-        <hr class="[ card__divider ] [ my-16 ]" />
-        <figure class="[ card__figure ] [ flex-row ]">
+        <hr class="[ card__divider ] [ divider ]" />
+        <figure class="[ card__figure ] [ flex-row ] [ gap-16 ]">
           <img
             class="card__author-image"
             src="./assets/images/image-avatar.png"
             alt="Jules Wyvern"
           />
           <figcaption
-            class="[ card__caption ] [ text-caption color-soft-blue ]"
+            class="[ card__caption ] [ flex-row ] [ gap-5 text-caption color-soft-blue ]"
           >
             Creation of
             <a href="#" class="[ card__link ] [ color-white ]">Jules Wyvern</a>
